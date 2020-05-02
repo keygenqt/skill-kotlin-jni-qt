@@ -30,3 +30,5 @@ JNI - connecting link
 - Send data qt -> kotlin (qt)
 - Send data kotlin -> qt (kotlin)
 - Call notification from kotlin -> qt (kotlin)
+
+![picture](data/screenshot-27.png)
