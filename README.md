@@ -1,9 +1,6 @@
 KotlinJNIQt
 ===================
 
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-
-
 An example of a combination of [kotlin](https://kotlinlang.org/) + [JNI](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/) + [Qt](https://www.qt.io/)
 
 ### Problem
@@ -32,3 +29,5 @@ JNI - connecting link
 - Call notification from kotlin -> qt (kotlin)
 
 ![picture](data/screenshot-27.png)
+
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
