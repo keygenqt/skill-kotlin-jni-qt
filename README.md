@@ -1,14 +1,7 @@
-KotlinJNIQt
+Kotlin + JNI + Qt
 ===================
 
 An example of a combination of [kotlin](https://kotlinlang.org/) + [JNI](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/) + [Qt](https://www.qt.io/)
-
-### Idea:
-Kotlin - base language for make application
-
-Qt - GUI interface linked like library
-
-JNI - connecting link
 
 ### Implemented
 
