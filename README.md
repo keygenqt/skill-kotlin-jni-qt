@@ -3,9 +3,6 @@ KotlinJNIQt
 
 An example of a combination of [kotlin](https://kotlinlang.org/) + [JNI](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/) + [Qt](https://www.qt.io/)
 
-### Problem
-Qt License - [GNU General Public License](https://www.gnu.org/licenses/)
-
 ### Idea:
 Kotlin - base language for make application
 
