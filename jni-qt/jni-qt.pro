@@ -37,17 +37,14 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-DISTFILES += \
-    Java.java
-
-unix:!macx: LIBS += -L/usr/lib/jvm/java-11-openjdk-amd64/jre/lib/amd64/
+unix:!macx: LIBS += -L/usr/lib/jvm/java-11-openjdk-amd64/lib/
 INCLUDEPATH += /usr/lib/jvm/java-11-openjdk-amd64/include/linux
 INCLUDEPATH +=/usr/lib/jvm/java-11-openjdk-amd64/include
-DEPENDPATH += /usr/lib/jvm/java-11openjdk-amd64/include
+DEPENDPATH += /usr/lib/jvm/java-11-openjdk-amd64/include
 
-unix:!macx: LIBS += -L/usr/lib/jvm/java-11-openjdk-amd64/jre/lib/amd64/server/
-INCLUDEPATH += /usr/lib/jvm/java-11-openjdk-amd64/jre/lib/amd64/server
-DEPENDPATH += /usr/lib/jvm/java-11-openjdk-amd64/jre/lib/amd64/server
+unix:!macx: LIBS += -L/usr/lib/jvm/java-11-openjdk-amd64/lib/server/
+INCLUDEPATH += /usr/lib/jvm/java-11-openjdk-amd64/lib/server
+DEPENDPATH += /usr/lib/jvm/java-11-openjdk-amd64/lib/server
 
 RESOURCES += \
     resources.qrc

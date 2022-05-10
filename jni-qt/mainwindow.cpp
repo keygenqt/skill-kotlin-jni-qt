@@ -21,7 +21,7 @@
 #include <about.h>
 #include <QMessageBox>
 #include <QStyle>
-#include <QDesktopWidget>
+#include <QScreen>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -35,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent)
             Qt::LeftToRight,
             Qt::AlignCenter,
             this->size(),
-            qApp->desktop()->availableGeometry()
+            this->screen()->availableGeometry()
         )
     );
 
@@ -65,6 +65,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     trayIcon->setContextMenu(menu);
     trayIcon->show();
+
+    this->show();
 
     QObject::connect(this, SIGNAL(valueChanged(int, QString)), this, SLOT(setValue(int, QString)));
 }
@@ -124,7 +126,7 @@ void MainWindow::setValue(int id, QString params) {
                     Qt::LeftToRight,
                     Qt::AlignCenter,
                     windowAbout->size(),
-                    qApp->desktop()->availableGeometry()
+                    this->screen()->availableGeometry()
                 )
             );
             windowAbout->show();

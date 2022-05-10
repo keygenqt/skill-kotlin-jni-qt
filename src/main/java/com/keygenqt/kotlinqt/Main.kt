@@ -21,6 +21,7 @@ import com.keygenqt.kotlinqt.base.*
 import com.keygenqt.kotlinqt.utils.*
 
 fun main(args: Array<String>) {
+    println("RUN")
     QtApp.run {
         when (it) {
             TRAY_SELECT -> {

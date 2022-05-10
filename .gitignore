@@ -1,6 +1,8 @@
 .DS_Store
 .gradle
 build
+build-*
+*pro.user*
 gradlew.bat
 .idea
 out
