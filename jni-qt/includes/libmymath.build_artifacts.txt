@@ -1,0 +1,9 @@
+[SHARED_LIB]
+libmymath.so
+
+[HEADER]
+graal_isolate.h
+libmymath.h
+graal_isolate_dynamic.h
+libmymath_dynamic.h
+

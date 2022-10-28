@@ -46,5 +46,9 @@ unix:!macx: LIBS += -L/usr/lib/jvm/java-11-openjdk-amd64/lib/server/
 INCLUDEPATH += /usr/lib/jvm/java-11-openjdk-amd64/lib/server
 DEPENDPATH += /usr/lib/jvm/java-11-openjdk-amd64/lib/server
 
+LIBS += -L$$PWD/includes
+INCLUDEPATH += $$PWD/includes -lmymath
+DEPENDPATH += $$PWD/includes
+
 RESOURCES += \
     resources.qrc

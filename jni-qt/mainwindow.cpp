@@ -22,6 +22,9 @@
 #include <QMessageBox>
 #include <QStyle>
 #include <QScreen>
+#include <libmymath.h>
+#include <QDebug>
+#include <QString>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -137,6 +140,10 @@ void MainWindow::setValue(int id, QString params) {
 
 void MainWindow::on_pushButton_clicked()
 {
-    qDebug() << "qDebug()  << push Call to kotlin";
+    graal_isolate_t *isolate = NULL;
+    graal_isolatethread_t *thread = NULL;
+    graal_create_isolate(NULL, &isolate, &thread);
+
+    qDebug() << "qDebug()  << push Call to kotlin" + ceilingPowerOfTwo(thread, 14);
     this->listener->invoke("{type: 'qDebug', data: 'push Call to kotlin'}");
 }
